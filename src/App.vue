@@ -1,4 +1,5 @@
 <template>
+<ThemeSwitcher />
     <router-view />
 </template>
 
@@ -10,3 +11,10 @@ export default {
     },
 };
 </script>
+import ThemeSwitcher from "@/components/ThemeSwitcher.vue";
+
+export default {
+  components: {
+    ThemeSwitcher
+  }
+}
