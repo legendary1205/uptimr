@@ -54,7 +54,9 @@ pm2 برای اجرای دائم
 مراحل نصب:
 
 git clone https://github.com/legendary1205/uptimr.git
+
 cd uptimr
+
 npm run setup
 
 اجرای تستی:
@@ -63,15 +65,20 @@ node server/server.js
 
 اجرای دائمی با PM2:
 
-npm install pm2 -g && pm2 install pm2-logrotate
+npm install pm2 -g
+
+pm2 install pm2-logrotate
+
 pm2 start server/server.js --name uptimr
 
 ✅ آدرس پیش‌فرض برنامه:
+
 http://localhost:3001
 
 📌 دستورات مفید PM2:
 
 pm2 monit
+
 pm2 save && pm2 startup
 
 ⬆️ به‌روزرسانی Uptimr
